@@ -1,0 +1,13 @@
+# for extracting/cleaning data
+pandas==2.1.4
+requests==2.31.0
+lxml==5.1.0
+beautifulsoup4==4.12.3
+# for running the model
+langchain==0.0.352
+openai==0.27.8
+tiktoken==0.5.2
+# chromadb==0.4.22
+pinecone-client==2.2.2
+# for env management
+python-dotenv==1.0.0
