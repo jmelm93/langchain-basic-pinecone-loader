@@ -1,5 +1,4 @@
 import pandas as pd
-from io import StringIO
 from dotenv import load_dotenv
 #helpers
 from helpers.get_google_documentation import extract_and_convert_html_to_text
@@ -15,14 +14,9 @@ load_dotenv()
 
 csv_path = "source_data/urls.csv"
 
-# csv = """Page Name,URL
-# Essentials - Technical,https://developers.google.com/search/docs/essentials/technical
-# Essentials - Spam Policies,https://developers.google.com/search/docs/essentials/spam-policies"""
-
 data = pd.read_csv(csv_path)
 
 chat = ChatOpenAI()
-# embeddings = OpenAIEmbeddings()
 
 text_splitter = CharacterTextSplitter(
     # Define the separator as a period followed by a newline for splitting text
